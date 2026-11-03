@@ -16,6 +16,9 @@ class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
+
+    fun bindingGET() = _binding!!
+
 //    private val viewModel: HomeViewModel by viewModels()
 
     override fun onCreateView(
@@ -23,7 +26,8 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        Log.d("HomeFragment", "HomeFragment")
+        Log.d("HomeFragment", "HomeFragment : ${MainActivity.test}")
+
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
