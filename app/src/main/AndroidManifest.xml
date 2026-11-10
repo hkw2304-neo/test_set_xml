@@ -14,43 +14,25 @@
         android:theme="@style/Theme._1016_socialservice">
 
         <activity
-            android:name=".OneActivity"
+            android:name=".ui.screen.view.SplashActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme._1016_socialservice"
-            android:windowSoftInputMode="adjustResize"
-            android:configChanges="orientation|screenSize|screenLayout"
             android:screenOrientation="fullSensor"
-            >
+            android:theme="@style/Theme._1016_socialservice"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".TwoActivity"
-            android:exported="false"
-            android:label="@string/app_name"
-            android:theme="@style/Theme._1016_socialservice"
-            android:windowSoftInputMode="adjustResize"
+            android:name=".ui.screen.view.ContainterActivity"
             android:configChanges="orientation|screenSize|screenLayout"
+            android:exported="false"
             android:screenOrientation="fullSensor"
-            />
-
-<!--        <activity-->
-<!--            android:name=".MainActivity"-->
-<!--            android:exported="true"-->
-<!--            android:label="@string/app_name"-->
-<!--            android:theme="@style/Theme._1016_socialservice"-->
-<!--            android:windowSoftInputMode="adjustResize"-->
-<!--            android:configChanges="orientation|screenSize|screenLayout"-->
-<!--            >-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
+            android:theme="@style/Theme._1016_socialservice"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
