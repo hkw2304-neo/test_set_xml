@@ -41,6 +41,10 @@ class ContainterActivity : AppCompatActivity(){
                 _binding.navBottom.isVisible = destination.id in _viewModel.state.value.visibleNav
             }
         }
-        _binding.navBottom.setupWithNavController(navController)
+//        _binding.navBottom.setupWithNavController(navController)
+        _binding.apply {
+            navBottom.setupWithNavController(navController)
+            navDrawer.setupWithNavController(navController)
+        }
     }
 }

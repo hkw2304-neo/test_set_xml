@@ -11,7 +11,7 @@ import javax.inject.Inject
 
 data class ContainterViewState(
     val test: String = "컨테이너 뷰모델",
-    val visibleNav: List<Int> = listOf(R.id.mainFragment)
+    val visibleNav: List<Int> = listOf(R.id.mainFragment, R.id.dashboardFragment)
 )
 @HiltViewModel
 class ContainterViewModel  @Inject constructor(): ViewModel() {

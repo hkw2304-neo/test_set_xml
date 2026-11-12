@@ -19,6 +19,12 @@
             android:id="@+id/detailFragment"
             android:name="com.hkw.a1016_socialservice.ui.screen.view.DetailFragment"
             android:label="Detail"
-            tools:layout="@layout/main_fragment"
+            tools:layout="@layout/detail_fragment"
+            />
+        <fragment
+            android:id="@+id/dashboardFragment"
+            android:name="com.hkw.a1016_socialservice.ui.screen.view.DashboardFragment"
+            android:label="dashboard"
+            tools:layout="@layout/dashboard_fragment"
             />
 </navigation>

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">1016_socialservice</string>
     <string name="main_title">메인 화면입니다</string>
+    <string name="home_title">홈</string>
+    <string name="detail_title">상세</string>
+    <string name="dashboardText">대시보드</string>
 </resources>

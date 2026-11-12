@@ -2,12 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/mainFragment"
-        android:title="홈"
         android:icon="@drawable/baseline_home_24"
-        />
+        android:title="홈" />
     <item
         android:id="@+id/detailFragment"
-        android:title="목록"
         android:icon="@drawable/baseline_details_24"
-        />
+        android:title="목록" />
+    <item
+        android:id="@+id/dashboardFragment"
+        android:icon="@drawable/baseline_dashboard_24"
+        android:title="게시판" />
 </menu>
