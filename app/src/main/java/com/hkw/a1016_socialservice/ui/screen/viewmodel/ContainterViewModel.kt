@@ -1,5 +1,6 @@
 package com.hkw.a1016_socialservice.ui.screen.viewmodel
 
+import android.net.Uri
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.hkw.a1016_socialservice.R
@@ -11,7 +12,8 @@ import javax.inject.Inject
 
 data class ContainterViewState(
     val test: String = "컨테이너 뷰모델",
-    val visibleNav: List<Int> = listOf(R.id.mainFragment, R.id.dashboardFragment)
+    val visibleNav: List<Int> = listOf(R.id.mainFragment, R.id.dashboardFragment,R.id.featureFragment),
+    val photoUri: Uri? = null
 )
 @HiltViewModel
 class ContainterViewModel  @Inject constructor(): ViewModel() {
@@ -23,6 +25,13 @@ class ContainterViewModel  @Inject constructor(): ViewModel() {
         Log.d("ContainterViewModel", "ContainterViewModel created")
     }
 
+    fun setPhotoUri(uri: Uri){
+        _state.update{
+            it.copy(
+                photoUri = uri
+            )
+        }
+    }
     fun changeText(){
         _state.update{
             it.copy(

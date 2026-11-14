@@ -27,4 +27,10 @@
             android:label="dashboard"
             tools:layout="@layout/dashboard_fragment"
             />
+        <fragment
+            android:id="@+id/featureFragment"
+            android:name="com.hkw.a1016_socialservice.ui.screen.view.FeatureFragment"
+            android:label="feature"
+            tools:layout="@layout/feature_fragment"
+            />
 </navigation>
